@@ -1,0 +1,44 @@
+.social-handle{
+    a{
+        background-color:rgba($white, .15);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        margin:0 10px;
+        svg{
+            fill:$white;
+            width: 20px;
+        }
+    }
+}
+.footer-widgets{
+    position: relative;
+    h5{
+        color:$white;
+        margin-bottom: 25px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+    list-style: none;
+    line-height: 25px;
+    margin-bottom: 9px;
+            a{
+                color:$white;
+                text-decoration: none;
+            }
+        }
+    } 
+    address{
+        color:$white;
+p{
+    color:$white;
+    a{
+        color:$white;
+    }
+}
+    }
+}

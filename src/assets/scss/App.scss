@@ -1,0 +1,71 @@
+@import './variables.scss';
+ @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+ @import './Navabar.scss';
+ @import './Footer.scss';
+ @import './src/pages/home/TimeTable/TimeTable.scss';
+ @import './src/pages/home/craouselSlider/SliderSmile.scss';
+ @import './src/pages/home/patientsTestimonials/Testimonials.scss';
+ @import './src/pages/home/our-services/Services.scss';
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background:$white;
+
+}
+.bg-light-blue{
+    background-color:#f3faff;
+}
+.call-action{
+    font-size:1.313rem;
+}
+.overlay-extend {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.overlay-bg {
+    @extend .overlay-extend;
+    background-color: rgba($white, 0.8);
+}
+@include media-breakpoint-down(md) {
+.hero-thumbnail{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    aspect-ratio: 2/1;
+    img{
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+}
+@include media-breakpoint-down(xl) {
+    h2{
+        font-size:2rem;
+    }
+    .lead{
+        font-size:0.938rem;
+    }
+}
+@include media-breakpoint-down(lg) {
+    h2{
+        font-size:1.875rem;
+    }
+    .lead{
+        font-size:0.938rem;
+    }
+    .rounded-sm-none{
+        border-radius:0 !important;
+    }
+}

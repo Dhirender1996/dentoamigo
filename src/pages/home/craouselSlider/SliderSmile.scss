@@ -1,0 +1,10 @@
+.react-multiple-carousel__arrow{
+background-color: $white;
+&::before{
+    color: $blue;
+}
+&:hover{
+    background-color: $green;
+    color:#000;
+}
+}

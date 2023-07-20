@@ -1,0 +1,42 @@
+header{
+    .navbar{
+        .navbar-brand{
+            img{
+                @include media-breakpoint-down(xl) {
+                width: 230px;
+                }
+                @include media-breakpoint-down(sm) {
+                    width: 200px;
+                }
+            }
+        }
+
+        &-nav{
+            li{
+                padding: 0 10px 0 10px;
+                a{
+                    font-size: 18px;
+                    color:$secondary;
+                    font-weight: 500;
+                    @include media-breakpoint-down(xl) {
+                        font-size: 16px;
+                     }
+                    &:hover{
+                        color:$green;
+                    }
+                    &.active{
+                        color:$green !important;
+                }
+                }
+                
+                
+        }
+    }
+
+    }
+}
+@include media-breakpoint-down(xl) {
+    .btn{
+        font-size: 16px;
+    }
+}

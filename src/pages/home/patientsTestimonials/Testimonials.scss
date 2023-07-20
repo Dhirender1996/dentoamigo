@@ -1,0 +1,20 @@
+
+.review-card{
+    .react-multi-carousel-dot-list{
+        justify-content: start;
+        .react-multi-carousel-dot--active{
+            button{
+background-color: $green;
+border-color: $green;
+            }
+        }
+       
+    }
+
+    .react-multi-carousel-dot{
+        button{
+            border-color: $green;
+            background-color: transparent;
+        }
+    } 
+}
